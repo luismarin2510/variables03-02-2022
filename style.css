@@ -1,0 +1,16 @@
+dialog {
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: orange;
+    color: black;
+}
+.footer{
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+}
+.footer button{
+    cursor: pointer;
+background-color: grey;
+}
