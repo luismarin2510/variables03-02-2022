@@ -1,11 +1,12 @@
-//para abrir ventana 
+/*para abrir ventana*/
 document.querySelector("#abrir").addEventListener("click",(e)=>{
-    document.querySelector("#ventana").show();
+    document.querySelector("#ventana").show(); // abre la funcion de ventana emergente
 })
-// para cerar ventana 
+/* para cerar ventana */
 document.querySelector("#botonCerrar").addEventListener("click",(e)=>{
-    document.querySelector("#ventana").close();
+    document.querySelector("#ventana").close(); // asigna el boton y la funcion 
 })
+/* mensajes de consola  */
 console.log("mensaje")
 console.warn("cuidado");
 console.error("mortal");
@@ -17,15 +18,18 @@ let datos = [
 console.table(datos);
 console.groupEnd();
 
-console.log("%c personalizado","color:green; font-size:15px");
+console.log("%c Personalizado","color:green; font-size:15px");
+
 /****** constantes y variables en js ********/
 
-// let numero = 14.51;
-// let numbero = Number(1451);
+ let numero = 14.51;
+ let numbero = Number(1451);
 
-// console.log(numero);
-// console.log(numbero);
+ console.log(numero);
+ console.log(numbero);
 
+
+/* datos de tipo string*/
 let primerNombre ="Luis";
 let segundoNombre ="Eduardo";
 let PrimerApellido ="Marin"
@@ -33,3 +37,34 @@ let segundoApellido ="Velasco";
 console.log(primerNombre,PrimerApellido);
 console.log(segundoNombre+" "+segundoApellido); // concatenar se usa + pero los espacios hay que asignarlos 
 console.log(segundoNombre.concat(PrimerApellido));// pega los datos tal cual no hay espacios solo son string
+console.log(primerNombre+'"'+PrimerApellido+'"');//concatenado con comillas simples ('').... es mas complicado 
+console.warn(`${primerNombre} ${PrimerApellido}`); // se puede usar la tilde invertida   o basquit (`) aqui si se puede usar 
+////////////////////////////////////////////// el espacio y la y la simbologia que quiera (`${ } () && ${ }`)
+console.log(`%c${segundoNombre} %c"'${segundoApellido}'"`,"color:orange;","color:blue");
+////////////////////////////////////////////////%C separa caracteres para darle propiedades como el color 
+
+/* tipos de datos numericos*/////
+let edad = 30;
+let altura = 1.75;
+let moneda = Intl.NumberFormat("de-DE",{style:"currency",currency:"COP"}).format(1000); // asi se aigna formato de moneda colombiana 
+
+console.log(`
+edad:${edad}
+atura:${altura}
+Moneda:${moneda}
+\n`);
+
+/* Tipos de de datos booleanos */
+let soyestudiante = true;
+let soyprofesor = false;
+console.log( `verdadero:${soyestudiante} falso:${soyprofesor}
+\n`);
+
+/* variables null e indefinido */
+let variable = null;// si le coloco null la variable la lanza como objeto 
+let varr; // si no le coloco nada lo lanza como indefinido 
+let varred = undefined;
+
+console.log(varr); // identifica como indefinido pero no exite por eso aparece en gris en la consola 
+console.log(typeof(variable)); // identifica como que tipo es la variable 
+console.log(typeof(varred)); //define indefinido pero esta si se muestra en negro luego existe 
