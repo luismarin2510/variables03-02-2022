@@ -66,5 +66,35 @@ let varr; // si no le coloco nada lo lanza como indefinido
 let varred = undefined;
 
 console.log(varr); // identifica como indefinido pero no exite por eso aparece en gris en la consola 
-console.log(typeof(variable)); // identifica como que tipo es la variable 
+console.log(typeof(variable)); // identifica como que tipo es la variable objeto
 console.log(typeof(varred)); //define indefinido pero esta si se muestra en negro luego existe 
+/* tipos de datos objeto  */
+
+const informacion = {
+    personal:{
+        edad:25,
+        atura:1.75,
+        sexo: "M"
+    },
+
+    vivienda:{
+        pais:"colombia",
+        ciudad:"bucaramanaga"
+    }
+};
+
+console.log(informacion);
+
+/* tipos de datos map */
+const lista = new Map();
+lista.set("nombre","luis");
+lista.set("aPellido","Marin");
+
+console.log(lista);
+
+/* TIPOS DE DATOS Set */
+const data = new Set();
+data.add("luis");
+data.add("marin");
+
+console.log(data);
