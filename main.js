@@ -100,5 +100,5 @@ data.add("marin");
 console.log(data);
 
 /* capturar datos desde ventana emergente*/
-let nombre= prompt("Ingresar Numero","solo numeros");
-console.log(nombre);
+let nombre= prompt("Ingresar Numero","solo numeros"); // se declara la variable se asigna nombre dentro de () se asigna
+console.log(nombre);  // un enunciado y como opcion que tipo de respuesta se espera 
