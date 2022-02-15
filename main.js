@@ -98,3 +98,7 @@ data.add("luis");
 data.add("marin");
 
 console.log(data);
+
+/* capturar datos desde ventana emergente*/
+let nombre= prompt("Ingresar Numero","solo numeros");
+console.log(nombre);
